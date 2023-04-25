@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;  }
+           .especial{
+            background-color: firebrick;
+           }
+            a{
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+          /*pseudo classes*/
+            a:visited{
+                color: darkred;
+            }
+            a:hover{
+                color: black;
+                text-decoration: underline;
+            }
+           /*pseudo elementos*/
+            a:active{
+                color: blue;
+            }
+           a::before{
+            content: '  ☞';
+           }
+            a::after{
+                content:' ☜';
+                text-decoration: none;
+                font-weight: normal;
+                color: rgb(115, 118, 121);
+           
+         }
+    </style>
+</head>
+<body>
+    <h1>Criando link</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial" >Teste link 1 </a>  </li>
+        <li><a href="https://pt-br.facebook.com/">Teste link 2</a> </li>
+        <li><a href="https://www.instagram.com/">Teste link 3</a> </li>
+    </ul>
+</body>
+</html>

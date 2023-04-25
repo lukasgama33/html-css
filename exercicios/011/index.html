@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em Html</title>
+</head>
+<body>
+    <h1>formatos de imagem e tamnho para dispositivos</h1>
+    <p>imagem de teste 1 
+   <picture>
+
+<source media="(max-width: 750px)" srcset="fotos/p+.png" type="image/png">
+
+    <source media="(max-width: 1050px)" srcset="fotos/m+.png" type="image/png">
+
+
+    <img src="fotos/g+.png" alt="imagem flexivel">
+    </picture>
+    </p>
+
+    <h1>Teste para audio</h1>
+<p>Modelo 1</p>
+<audio src="mida/midia1.mp3" controls autoplay></audio>
+
+<p>modelo 2</p>
+<audio preload="metadata" controls loop>
+<source src="mida/midia1.mp3" type="audio/mpeg">
+
+</audio>
+<h1>Teste para videos local </h1>
+
+<video src="video/y2.webm"  width="250
+" controls ></video>
+<video src="video/3.mp4" width="250" controls></video>
+ 
+<p>teste para diversos navegadores</p>
+
+<video width="250" poster="fotos/m+.png" controls>
+<source src="video/1.mp4" type="video/mp4">
+<source src="video/y2.webm" type="video/webm">
+</video>
+         
+<h1>Video em hospedagem</h1>
+<p>teste 1 </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>teste vimeo</p>
+<iframe src="https://player.vimeo.com/video/381624926?h=f5935d10db&autoplay=1&loop=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

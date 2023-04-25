@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* tudo que em Html e id no Css vira#
+  tudo que em html e class em Css vira. */ 
+body{
+
+    background-color: rgb(132, 221, 221);
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: aliceblue;
+}
+#principal{ /*pode ser tanto cm h1 ou so id*/
+    text-align: center;
+    background-color: cyan;
+    color: rgb(2, 0, 0);
+}
+h2{color: aliceblue;
+
+}
+.basico{color: dodgerblue;
+font-weight: bold;
+}
+.intermediario{color:blue;
+
+}
+.avançado{color: darkblue;
+
+}
+.destaque{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

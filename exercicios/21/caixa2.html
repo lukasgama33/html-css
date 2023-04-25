@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+<style>
+/*Tags de agrupamento (grouping tags):
+
+- Sem valor semântico:
+
+   <div>		-> block
+   <span>	-> inline
+
+- Com valor semântico:
+
+  <header>		-> cabeçalho
+       <nav>	        -> para menus, links, navegação
+
+ <main>			       -> principal
+   <section>		       -> seção
+	 <article>	       -> artigo
+		 <aside>	       -> periférico ao artigo (ex: escritor / autor)
+
+ <footer>	               -> rodapé
+
+*/
+body{font-family: 'Courier New', Courier, monospace,sans-serif;
+background-color: darkgray;
+margin: 0px;
+}
+
+header{
+
+    background-color: whitesmoke;
+padding: 15px;
+margin: 10px;
+}
+nav {
+    background-color: rgb(92, 96, 99);
+    padding: 3px;
+    box-shadow: 6px 5px 1px 1px black;
+    
+}
+nav > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 0px rgb(77, 76, 76);
+}
+article{
+    background-color: lightgray;
+    padding: 5px;
+}
+article > aside{
+    background-color: rgb(148, 145, 145);
+}
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
+
+footer>p{
+    margin: 4px;
+}
+
+</style>
+
+</head>
+<body>
+
+    <header>
+    <h1>Meu site</h1>
+    <nav><a href="@">Link</a>
+        <a href="@">Link</a>
+        <a href="@">Link</a>
+        <a href="@">Link</a>
+        <a href="@">Link</a></nav>
+  </header>
+  <main>
+<section id="assunto"><p>Drugs</p></section>
+<section id="modelo">
+    <article>
+        <h2>Tipo de drogas</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas similique quidem soluta, nulla repellat consequatur. Vel neque alias labore quisquam, cumque, odit inventore est voluptate sunt nostrum dolores debitis at.</p>
+        <aside>Escrito por Lukas Gama</aside>
+    </article>
+</section>
+  </main>
+  <footer>
+<p>Desenvolvimento de site Tester</p>
+  </footer>  
+</body>
+</html>
