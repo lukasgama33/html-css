@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela exercicio</title>
+
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    thead,.color,tfoot{
+        background-color: gainsboro;
+        color: white;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid gray;
+    padding: 10px;
+}
+
+    
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Area</th>
+                <th rowspan="3">Discplinas</th>
+                <th colspan="2">notas</th>
+                <th rowspan="2">Media</th>
+            </tr>
+            <tr>
+        <td>Nota 1</td>
+        <td>Nota 2</td>
+            </tr>
+        </thead>  
+ <tbody>
+    <tr>
+        <th rowspan="4"> Exatas</th>
+        <td> Matematica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Fisica </td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0.</td>
+    </tr>
+    <tr class="color">
+        <th colspan="4">Media entrada</th>
+        <th>0.0</th>
+    </tr>
+    <tr>
+        <th rowspan="2">Humanas</th>
+        <td>Hitoria</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+    <tr>
+        <td>Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+    <tfoot>
+        <tr >
+            <th colspan="4">Media Humanas</th>
+            <td>0.0</td>
+        </tr>
+    </tfoot>
+ </tbody>
+    </table>
+</body>
+</html>
